@@ -25,7 +25,7 @@ const CastCrewFullList = () => {
   }, [cast, crew]);
 
   const goToActorPageHandler = (actodId) => {
-    navigate(`/${actodId}`)
+    navigate(`/actor/${actodId}`)
   }
   const goBack = () => {
     navigate(-1)

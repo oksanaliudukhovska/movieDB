@@ -47,7 +47,7 @@ const router = createBrowserRouter([
             element: <SearchPage/>
         },
         {
-            path: "/:actorId",
+            path: "/actor/:actorId",
             element: <ActorPage/>
         },
         {

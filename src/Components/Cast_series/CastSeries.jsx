@@ -13,7 +13,7 @@ const CastSeries = ({tvShowId}) => {
     let dispatch = useDispatch();
     let navigate = useNavigate();
     const goToActorPageHandler = (actorId) => {
-        navigate(`/${actorId}`)
+        navigate(`/actor/${actorId}`)
     }
 
     const options = {

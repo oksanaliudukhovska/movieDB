@@ -13,7 +13,7 @@ const Cast = ({movieId}) => {
    let dispatch = useDispatch();
    let navigate = useNavigate();
     const goToActorPageHandler = (actorId) => {
-        navigate(`/${actorId}`, { replace: true })
+        navigate(`/actor/${actorId}`, { replace: true })
     } 
 
     const goToCastFullListPage = () => {
