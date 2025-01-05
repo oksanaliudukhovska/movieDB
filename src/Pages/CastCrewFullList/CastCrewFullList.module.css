@@ -1,0 +1,59 @@
+.CastCrewFullList {
+  background-color: white;
+  color: black;
+  padding: 10px 0 0 10px;
+}
+.CastCrewFullList button {
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.CastCrewFullList button:hover {
+  transform: scale(1.05);
+}
+.CastCrewFullList .container {
+  display: flex;
+  margin: 20px 15px;
+}
+.CastCrewFullList .container .castColumn span {
+  font-weight: 600;
+  margin: 20px;
+}
+.CastCrewFullList .container .castColumn li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+  cursor: pointer;
+}
+.CastCrewFullList .container .castColumn li img {
+  border-radius: 10px;
+}
+.CastCrewFullList .container .castColumn li .actorName {
+  font-weight: 600;
+}
+.CastCrewFullList .container .castColumn li .actorJob {
+  font-size: 12px;
+  font-style: italic;
+}
+.CastCrewFullList .container .crewColumn span {
+  font-weight: 600;
+  margin: 20px;
+}
+.CastCrewFullList .container .crewColumn li {
+  margin: 20px;
+}
+.CastCrewFullList .container .crewColumn li .stuffName {
+  font-size: 16px;
+}
+.CastCrewFullList .container .crewColumn li .stuffJob {
+  font-size: 12px;
+  font-style: italic;
+}/*# sourceMappingURL=CastCrewFullList.module.css.map */

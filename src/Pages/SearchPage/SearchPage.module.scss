@@ -1,0 +1,153 @@
+.SearchPage{
+    background-color: white;
+        .input{
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .searchIcon{
+                cursor: pointer;
+                font-size: 20px;
+                transition: transform 0.3s ease;
+                @media(max-width: 480px){
+                    font-size: 16px;
+                }
+                &:hover{
+                transform: scale(1.1);
+                }
+            }
+            input{
+                width: 95%;
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid silver;
+                &::placeholder{
+                    font-style: italic;
+                }
+            }
+           
+        }
+        .resultsContainer{
+            padding: 15px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            min-height: 80vh;
+            .categoriesContainer{
+                border-radius: 15px;
+                border: 1px solid rgba(0, 0, 0, 0.36);
+                .categoryTitle{
+                    background-color: orange;
+                    font-size: 20px;
+                    padding: 20px;
+                    margin-bottom: 10px;
+                    color: rgba(0, 0, 0, 0.704);
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    @media(max-width: 768px){
+                        font-size: 18px; 
+                        padding: 16px;
+                    }
+                    @media(max-width: 480px){
+                        font-size: 14px; 
+                        padding: 10px;
+                    }
+
+                }
+                p{
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    color: black;
+                    cursor: pointer;
+                    @media(max-width: 768px){
+                        font-size: 16px; 
+                        padding: 8px;
+                        margin-bottom: 5px;
+                    }
+                    @media(max-width: 480px){
+                        font-size: 12px; 
+                        padding: 6px;
+                    }
+                    &.active{
+                        background-color: rgba(255, 166, 0, 0.486);
+                        font-weight: 600;
+                    }
+                }
+            }
+            .noResults{
+                background-color: orange;
+                color: black;
+                padding: 10px;
+                border-radius: 5px;
+                h2{
+                 font-size: 20px;
+                 @media(max-width: 768px){
+                    font-size: 16px; 
+                }
+                @media(max-width: 480px){
+                    font-size: 12px; 
+                }
+                }
+                p{
+                  font-size: 16px;
+                  @media(max-width: 768px){
+                    font-size: 12px; 
+                }
+                }
+            }
+            .results{
+             .resultsTitle{
+                color: black;
+                font-weight: 400;
+                font-size: 16px;
+                @media(max-width:768px){
+                    font-size: 12px;
+                }
+             }
+             .resultsList{
+                display: flex;
+                flex-direction: column;
+                .item{
+                   display: flex;
+                   flex-direction: row;
+                   margin: 20px;
+                   border-radius: 10px;
+                   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(255, 255, 255, 0.3);
+                   cursor: pointer;
+                   @media(max-width: 480px){
+                    flex-direction: column;
+                    width: 200px;
+                   }
+                   img{
+                    width: 150px;
+                    border-radius: 10px 0 0 10px;
+                    @media(max-width: 480px){
+                        width: 200px;
+                        border-radius: 10px 10px 0 0;
+                    }
+                  
+                   }
+                   .description{
+                    color: black;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .overview{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -moz-box;
+                        -moz-box-orient: vertical;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 5;
+                        -webkit-box-orient: vertical;
+                        line-clamp: 5;
+                        box-orient: vertical;
+                    }
+                   }
+                }
+             }
+            }
+        }
+}

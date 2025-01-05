@@ -1,0 +1,68 @@
+.Recommendation {
+  background-color: #fff;
+  margin: 20px;
+}
+.Recommendation h2 {
+  color: black;
+  margin-left: 20px;
+}
+.Recommendation .container {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+.Recommendation .container::-webkit-scrollbar {
+  height: 8px;
+}
+.Recommendation .container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.Recommendation .container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.Recommendation .container .empty {
+  color: black;
+  margin: 20px;
+  font-size: 18px;
+}
+.Recommendation .container .item {
+  margin: 20px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.Recommendation .container .item:hover {
+  transform: scale(1.05);
+}
+.Recommendation .container .item:hover .recTitle {
+  color: orange;
+}
+.Recommendation .container .item img {
+  border-radius: 10px;
+  width: 350px;
+  height: auto;
+}
+.Recommendation .container .item .recTitle {
+  color: rgba(0, 0, 0, 0.699);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 5px;
+  font-weight: 600;
+  text-wrap: wrap;
+}
+.Recommendation .container .item .addtoWathcList {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 8%;
+}/*# sourceMappingURL=Recommendation.module.css.map */

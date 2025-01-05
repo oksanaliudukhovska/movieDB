@@ -1,0 +1,116 @@
+.Search {
+  min-height: 40vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Search .text {
+  width: 80%;
+}
+.Search .text h2 {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .Search .text h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .Search .text h2 {
+    font-size: 30px;
+  }
+}
+.Search .text h3 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .Search .text h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .Search .text h3 {
+    font-size: 18px;
+  }
+}
+.Search .input {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  position: relative;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #d4d4d4, #231f09);
+  padding: 5px;
+}
+.Search .input input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #333;
+  background: transparent;
+}
+@media (max-width: 768px) {
+  .Search .input input {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+@media (max-width: 480px) {
+  .Search .input input {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}
+.Search .input input::-moz-placeholder {
+  color: #777;
+  font-size: 16px;
+  padding-left: 5px;
+}
+.Search .input input::placeholder {
+  color: #777;
+  font-size: 16px;
+  padding-left: 5px;
+}
+@media (max-width: 768px) {
+  .Search .input input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .Search .input input::placeholder {
+    font-size: 12px;
+  }
+}
+.Search .input button {
+  border: none;
+  background: linear-gradient(135deg, #141313, #4c3e02);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 16px 26px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .Search .input button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .Search .input button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+.Search .input button:hover {
+  background: linear-gradient(135deg, #554001, #8a7000);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=Search.module.css.map */

@@ -1,0 +1,47 @@
+.HomePage {
+  background-color: white;
+}
+.HomePage .top-rated-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.HomePage .top-rated {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  list-style: none;
+  margin: 0;
+}
+.HomePage .top-rated::-webkit-scrollbar {
+  display: none;
+}
+.HomePage .scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--color-base);
+  font-size: 18px;
+  border: none;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+.HomePage .scroll-btn.left {
+  left: 0;
+}
+.HomePage .scroll-btn.right {
+  right: 0;
+}
+.HomePage .home-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=HomePage.module.css.map */

@@ -1,0 +1,233 @@
+.UserPage {
+  .baner {
+    display: flex;
+    align-items: center;
+
+    .userIcon {
+      width: 300px;
+      height: auto;
+      margin-right: 150px;
+
+      @media (max-width: 1024px) {
+        width: 260px;
+        margin-right: 120px;
+      }
+
+      @media (max-width: 768px) {
+        width: 200px;
+        margin-right: 100px;
+      }
+
+      @media (max-width: 480px) {
+        width: 160px;
+        margin-right: 50px;
+      }
+    }
+
+    .gradientText {
+      font-size: 26px;
+      font-weight: bold;
+      background: linear-gradient(to right, #fdfdfc, #5e5d5d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .watchListContainer {
+    background-color: white;
+    padding: 20px;
+    min-height: 66vh;
+
+    .titleContainer {
+      display: flex;
+      align-items: center;
+
+      .watchTitle {
+        margin-left: 30px;
+        font-size: 30px;
+        color: black;
+        margin-right: 30px;
+
+        @media (max-width: 768px) {
+          font-size: 20px;
+          margin-right: 10px;
+        }
+      }
+
+      .toggleMovieTV {
+        button {
+          background: transparent;
+          border: none;
+          font-size: 20px;
+          padding: 10px;
+          cursor: pointer;
+
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+
+        .activeTab {
+          color: orange;
+          font-size: 22px;
+
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .empty {
+      height: 44vh;
+      color: #333232;
+      padding: 30px;
+      font-size: 22px;
+    }
+
+    .itemsList {
+      display: grid;
+      grid-template-columns: 1fr;
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr 1fr; 
+      }
+      .item {
+        display: flex;
+        color: black;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(255, 255, 255, 0.3);
+        margin: 20px;
+        border-radius: 10px;
+        font-family: var(--font-family-base);
+        cursor: pointer;
+
+        img {
+          width: 150px;
+          height: auto;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        .description {
+          flex: 1;
+          padding: 10px;
+          font-family: var(--font-family-base);
+        
+
+          .title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+
+            span {
+              font-style: italic;
+              font-weight: 300;
+            }
+          }
+
+          .progressContainer {
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+            border-radius: 50px;
+      
+           @media(max-width: 480px){
+           display: none;
+           }
+        
+          }
+
+          .overview {
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -moz-box;
+            -moz-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            line-clamp: 3;
+            box-orient: vertical;
+          }
+
+          .removeButton {
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            font-weight: 300;
+            padding: 10px;
+            color: #00000086;
+            display: flex;
+            align-items: center;
+             cursor: pointer;
+
+            .icon {
+              font-size: 30px;
+              padding-right: 5px;
+            }
+          }
+        }
+
+        @media (max-width: 768px) {
+
+            .description {
+            padding: 15px;
+
+            .title {
+              font-size: 18px;
+            }
+
+            .overview {
+              font-size: 14px;
+            }
+
+            .removeButton {
+              font-size: 16px;
+
+              .icon {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+
+        @media (max-width: 480px) {
+
+          flex-direction: column;
+          margin: 10px;
+
+          img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+          }
+
+          .description {
+            padding: 10px;
+
+            .title {
+              font-size: 16px;
+            }
+
+            .overview {
+              display: none;
+
+            }
+
+            .removeButton {
+              font-size: 14px;
+              padding: 0;
+
+              .icon {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

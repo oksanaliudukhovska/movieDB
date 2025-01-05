@@ -1,0 +1,186 @@
+.MoviePage {
+  background-color: white;
+}
+.MoviePage .main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.MoviePage .main .poster {
+  margin: 20px;
+}
+.MoviePage .main .poster img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .MoviePage .main .poster img {
+    max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .MoviePage .main .poster img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .MoviePage .main .poster img {
+    max-width: 150px;
+  }
+}
+.MoviePage .main .descrition {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+.MoviePage .main .descrition .genres {
+  color: var(--color-base);
+  font-weight: 300;
+}
+.MoviePage .main .descrition .title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+  .MoviePage .main .descrition .title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .MoviePage .main .descrition .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .MoviePage .main .descrition .title {
+    font-size: 24px;
+  }
+}
+.MoviePage .main .descrition .titleLight {
+  font-weight: 300;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 1024px) {
+  .MoviePage .main .descrition .titleLight {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .MoviePage .main .descrition .titleLight {
+    font-size: 26px;
+  }
+}
+@media (max-width: 480px) {
+  .MoviePage .main .descrition .titleLight {
+    font-size: 20px;
+  }
+}
+.MoviePage .main .descrition .releaseDate {
+  font-weight: 300;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 15px;
+}
+@media (max-width: 1024px) {
+  .MoviePage .main .descrition .releaseDate {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .MoviePage .main .descrition .releaseDate {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .MoviePage .main .descrition .releaseDate {
+    font-size: 14px;
+  }
+}
+.MoviePage .main .descrition .circularProgressbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.MoviePage .main .descrition .circularProgressbar .circularProgressbar1 {
+  width: 50px;
+  height: 50px;
+}
+@media (max-width: 1024px) {
+  .MoviePage .main .descrition .circularProgressbar .circularProgressbar1 {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .MoviePage .main .descrition .circularProgressbar .circularProgressbar1 {
+    width: 30px;
+    height: 30px;
+  }
+}
+.MoviePage .main .descrition .generalInfo {
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.MoviePage .main .descrition .generalInfo .list {
+  font-style: italic;
+  margin-right: 5px;
+}
+.MoviePage .main .descrition .budget {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.MoviePage .main .descrition .addtoWathcList {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.644);
+  border-radius: 50px;
+  width: 45px;
+  margin-bottom: 10px;
+}
+.MoviePage .main .descrition .overviewTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .MoviePage .main .descrition .overviewTitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .MoviePage .main .descrition .overviewTitle {
+    font-size: 16px;
+  }
+}
+.MoviePage .main .descrition .overview {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  .MoviePage .main .descrition .overview {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .MoviePage .main .descrition .overview {
+    font-size: 12px;
+  }
+}
+.MoviePage .cast {
+  background-color: white;
+  padding: 20px;
+}
+.MoviePage .cast h3 {
+  color: black;
+  margin-left: 20px;
+  cursor: pointer;
+}/*# sourceMappingURL=MoviePage.module.css.map */

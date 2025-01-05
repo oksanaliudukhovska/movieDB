@@ -1,0 +1,112 @@
+.MoviesFullList{
+    .totalContainer{
+    margin-top: 10px;
+    display:grid;
+    gap: 20px;
+    grid-template-columns: 1fr 4fr;
+   
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr 3fr;
+      }
+  
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr; 
+      }
+  
+    .categories{
+        margin: 10px;
+        ul{
+            border-radius: 5px;
+            li{
+                padding: 10px 5px;
+                 background-color: transparent;
+                color: #747474;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                border-bottom: 1px solid #747474;
+                &:hover{
+                    background-color: rgba(230, 139, 3, 0.644);
+                    color: #1b1b1b; 
+                    font-weight: 600;
+                    transform: scale(1.02); 
+                }
+                &.activeGenre {
+                background-color: rgba(255, 125, 3, 0.677); 
+                color: #949494; 
+                font-weight: bold; 
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            ul {
+              li {
+                font-size: 14px; 
+                padding: 8px 4px; 
+              }
+            }
+          }
+    }
+
+    .moviesContainer{
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    .oneTV {
+        width: 100%; 
+        @media (max-width: 768px) {
+          max-width: 200px; 
+        }
+      }
+    }
+
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    button {
+        background-color: #ff8e03; 
+        color: #fff; 
+        border: none;
+        border-radius: 5px; 
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease; 
+        &:disabled{
+            background-color: #ccc; 
+            color: #666; 
+            cursor: not-allowed;
+        }
+        &:hover:not(:disabled) {
+            background-color: #f77f00; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+          }
+          @media (max-width: 768px) {
+            padding: 8px 12px; 
+            font-size: 14px; 
+          }
+      }
+      span {
+        font-size: 18px;
+        color: #fff; 
+        padding: 5px 15px;
+        border-radius: 5px;
+        background-color: #023047; 
+        @media (max-width: 768px) {
+            font-size: 16px; 
+          }
+    
+          @media (max-width: 480px) {
+            font-size: 14px; 
+          }
+      }
+
+  }
+  
+  
+}

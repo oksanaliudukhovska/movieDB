@@ -1,0 +1,121 @@
+.MovieCredits {
+
+  .filmTitle {
+    font-size: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+  .container {
+    margin: 20px;
+    display: flex;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 4px;
+    }
+
+    .movieCreditBTN {
+      border-radius: 10px;
+      margin: 10px;
+      width: 150px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+      background-color: transparent;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(255, 255, 255, 0.3);
+      text-align: center;
+      cursor: pointer;
+      align-self: flex-start;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+     @media(max-width: 480px){
+      width: 100px;
+     }
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8), 0 3px 6px rgba(255, 255, 255, 0.4);
+
+      }
+
+      .movieCreditName {
+        overflow: hidden;
+        padding: 10px 5px;
+        font-family: var(--font-family-base);
+        color: #0000009a;
+        background-color: #74747428;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 0 0 10px 10px;
+        font-size: 12px;
+        width: 100%;
+        @media(max-width: 480px){
+          font-size: 10px;
+         }
+      }
+
+      .movieCreditIMG {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 150px;
+        height: auto;
+        position: relative;
+        object-fit: cover;
+        @media(max-width: 480px){
+          width: 100px;
+         }
+      }
+
+      span {
+        display: block;
+        position: absolute;
+        right: 0;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 3px;
+        color: black;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+
+      .voteAvarage {
+        top: 10px;
+        background-color: orange;
+      }
+
+      .voteCount {
+        top: 40px;
+        background-color: white;
+      }
+
+      .addtoWathcList {
+        top: 10px;
+        left: 0;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 5px;
+        cursor: pointer;
+        width: 23%;
+      }
+
+    }
+  }
+}

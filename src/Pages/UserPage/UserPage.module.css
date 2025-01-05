@@ -1,0 +1,205 @@
+.UserPage .baner {
+  display: flex;
+  align-items: center;
+}
+.UserPage .baner .userIcon {
+  width: 300px;
+  height: auto;
+  margin-right: 150px;
+}
+@media (max-width: 1024px) {
+  .UserPage .baner .userIcon {
+    width: 260px;
+    margin-right: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .UserPage .baner .userIcon {
+    width: 200px;
+    margin-right: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .UserPage .baner .userIcon {
+    width: 160px;
+    margin-right: 50px;
+  }
+}
+.UserPage .baner .gradientText {
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(to right, #fdfdfc, #5e5d5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  .UserPage .baner .gradientText {
+    font-size: 20px;
+  }
+}
+.UserPage .watchListContainer {
+  background-color: white;
+  padding: 20px;
+  min-height: 66vh;
+}
+.UserPage .watchListContainer .titleContainer {
+  display: flex;
+  align-items: center;
+}
+.UserPage .watchListContainer .titleContainer .watchTitle {
+  margin-left: 30px;
+  font-size: 30px;
+  color: black;
+  margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .UserPage .watchListContainer .titleContainer .watchTitle {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+.UserPage .watchListContainer .titleContainer .toggleMovieTV button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .UserPage .watchListContainer .titleContainer .toggleMovieTV button {
+    font-size: 16px;
+  }
+}
+.UserPage .watchListContainer .titleContainer .toggleMovieTV .activeTab {
+  color: orange;
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .UserPage .watchListContainer .titleContainer .toggleMovieTV .activeTab {
+    font-size: 16px;
+  }
+}
+.UserPage .watchListContainer .empty {
+  height: 44vh;
+  color: #333232;
+  padding: 30px;
+  font-size: 22px;
+}
+.UserPage .watchListContainer .itemsList {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (max-width: 480px) {
+  .UserPage .watchListContainer .itemsList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.UserPage .watchListContainer .itemsList .item {
+  display: flex;
+  color: black;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(255, 255, 255, 0.3);
+  margin: 20px;
+  border-radius: 10px;
+  font-family: var(--font-family-base);
+  cursor: pointer;
+}
+.UserPage .watchListContainer .itemsList .item img {
+  width: 150px;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.UserPage .watchListContainer .itemsList .item .description {
+  flex: 1;
+  padding: 10px;
+  font-family: var(--font-family-base);
+}
+.UserPage .watchListContainer .itemsList .item .description .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.UserPage .watchListContainer .itemsList .item .description .title span {
+  font-style: italic;
+  font-weight: 300;
+}
+.UserPage .watchListContainer .itemsList .item .description .progressContainer {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+@media (max-width: 480px) {
+  .UserPage .watchListContainer .itemsList .item .description .progressContainer {
+    display: none;
+  }
+}
+.UserPage .watchListContainer .itemsList .item .description .overview {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+.UserPage .watchListContainer .itemsList .item .description .removeButton {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.5254901961);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.UserPage .watchListContainer .itemsList .item .description .removeButton .icon {
+  font-size: 30px;
+  padding-right: 5px;
+}
+@media (max-width: 768px) {
+  .UserPage .watchListContainer .itemsList .item .description {
+    padding: 15px;
+  }
+  .UserPage .watchListContainer .itemsList .item .description .title {
+    font-size: 18px;
+  }
+  .UserPage .watchListContainer .itemsList .item .description .overview {
+    font-size: 14px;
+  }
+  .UserPage .watchListContainer .itemsList .item .description .removeButton {
+    font-size: 16px;
+  }
+  .UserPage .watchListContainer .itemsList .item .description .removeButton .icon {
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .UserPage .watchListContainer .itemsList .item {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .UserPage .watchListContainer .itemsList .item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .UserPage .watchListContainer .itemsList .item .description {
+    padding: 10px;
+  }
+  .UserPage .watchListContainer .itemsList .item .description .title {
+    font-size: 16px;
+  }
+  .UserPage .watchListContainer .itemsList .item .description .overview {
+    display: none;
+  }
+  .UserPage .watchListContainer .itemsList .item .description .removeButton {
+    font-size: 14px;
+    padding: 0;
+  }
+  .UserPage .watchListContainer .itemsList .item .description .removeButton .icon {
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=UserPage.module.css.map */

@@ -1,0 +1,21 @@
+.Footer{
+        background-color: #1B2A37;
+        text-transform: uppercase;
+        padding: 20px;
+        p{
+            text-align: center;
+        }
+        .container{
+            padding-top: 20px;
+            display: flex;
+             align-items: center;
+             justify-content: space-around;
+             span{
+                display: block;
+             }
+             .social{
+                display: flex;
+                gap: 20px;
+             }
+        }
+}

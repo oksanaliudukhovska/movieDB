@@ -1,0 +1,67 @@
+.CastSeries{
+    background-color: #fff;
+    .title{
+        margin-left: 30px;
+        padding-top: 50px;
+        font-size: 30px;
+        color: black;
+    }
+    .container {
+        margin: 20px;
+        display: flex;
+        overflow-x: auto; 
+        scrollbar-width: thin; 
+        scrollbar-color: #ccc transparent; 
+        &::-webkit-scrollbar {
+          height: 8px; 
+        }
+        
+        &::-webkit-scrollbar-track {
+          background: transparent; 
+        }
+        
+        &::-webkit-scrollbar-thumb {
+          background-color: #ccc; 
+          border-radius: 4px; 
+        }
+      }
+
+      .actorBTN {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding: 0; 
+        border: none; 
+        background: none; 
+        cursor: pointer;
+        width: 150px; 
+        margin: 10px 10px 30px 10px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+      }
+      
+      .actorBTN img {
+        width: 150px; 
+        height: 225px; 
+        object-fit: cover;
+        object-fit: cover; 
+        border-radius: 8px; 
+      }
+      
+      .actorName {
+        margin: 10px 0; 
+        font-size: 18px; 
+        color: black; 
+        text-align: center; 
+        font-weight: 400; 
+        overflow-wrap: break-word;
+      }
+      .actorCharacter{
+        font-size: 14px; 
+        color: black; 
+        text-align: center; 
+        font-weight: 300; 
+        overflow-wrap: break-word;
+      }
+      
+}

@@ -1,0 +1,21 @@
+.Footer {
+  background-color: #1B2A37;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.Footer p {
+  text-align: center;
+}
+.Footer .container {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Footer .container span {
+  display: block;
+}
+.Footer .container .social {
+  display: flex;
+  gap: 20px;
+}/*# sourceMappingURL=Footer.module.css.map */

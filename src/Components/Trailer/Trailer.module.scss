@@ -1,0 +1,17 @@
+.Trailer{
+   margin-right: 20px;
+   margin-left: 20px;
+      .title{
+         color: black;
+         margin-left: 20px;
+     }
+   .containerTrailer{
+         display: flex;
+         justify-content: start;
+         align-items: center;
+         width: 100%;
+         height: auto;
+         margin: 20px;
+         padding-bottom: 30px;
+   }  
+}

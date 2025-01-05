@@ -1,0 +1,175 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1B2A37;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+.Header .half {
+  display: flex;
+  align-items: center;
+}
+.Header .half .navLinkLogo {
+  color: rgba(255, 255, 255, 0.821);
+  text-decoration: none;
+  margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .Header .half .navLinkLogo {
+    margin-right: 10px;
+  }
+}
+.Header .half .navLinkLogo .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .Header .half .navLinkLogo .logo img {
+    width: 60px;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .Header .half .navLinkLogo .logo img {
+    width: 50px;
+    height: auto;
+  }
+}
+.Header .half .navLinkLogo .logotitle {
+  margin: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-base);
+  text-decoration: none !important;
+}
+@media (max-width: 768px) {
+  .Header .half .navLinkLogo .logotitle {
+    font-size: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .Header .half .navLinkLogo .logotitle {
+    font-size: 6px;
+  }
+}
+.Header .half .navLink {
+  color: rgba(255, 255, 255, 0.821);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  margin-left: 20px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .Header .half .navLink {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .Header .half .navLink {
+    display: none;
+  }
+}
+.Header .half .navLink:hover {
+  color: #ff8000;
+}
+.Header .half .navLink .navigation {
+  display: flex;
+}
+.Header .half .active {
+  color: #ff8000;
+}
+.Header .half .navLinkIcons {
+  display: inline-block;
+  color: silver;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-left: 26px;
+}
+@media (min-width: 481px) {
+  .Header .half .navLinkIcons {
+    display: none;
+  }
+}
+.Header .half .navLinkIcons:hover {
+  color: #ff8000;
+}
+.Header .half .active {
+  color: #ff8000;
+}
+.Header .half .searchContainer {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+@media (max-width: 480px) {
+  .Header .half .searchContainer {
+    padding: 0;
+  }
+}
+.Header .half .searchContainer .searchInput {
+  flex: 1;
+  padding: 10px 15px;
+  background-color: rgb(67, 74, 79);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  width: 260px;
+  transition: background-color 0.3s ease, border-bottom 0.3s ease;
+}
+@media (max-width: 768px) {
+  .Header .half .searchContainer .searchInput {
+    width: 140px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+.Header .half .searchContainer .searchInput::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+.Header .half .searchContainer .searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+.Header .half .searchContainer .searchInput:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.577);
+}
+.Header .half .searchContainer .searchInput:focus::-moz-placeholder {
+  color: transparent;
+}
+.Header .half .searchContainer .searchInput:focus::placeholder {
+  color: transparent;
+}
+.Header .half .searchContainer .btnSearch {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.826);
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.Header .half .searchContainer .btnSearch:hover {
+  transform: scale(1.1);
+}
+.Header .half .searchContainer .btnSearch:active {
+  transform: scale(0.9);
+}
+@media (max-width: 768px) {
+  .Header .half .userLogoIMG {
+    width: 26px;
+    height: auto;
+  }
+}/*# sourceMappingURL=Header.module.css.map */

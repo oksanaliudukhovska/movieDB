@@ -1,0 +1,99 @@
+.ActorPage {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #fff;
+  color: black;
+  padding: 15px;
+  min-height: 87vh;
+
+  .info {
+    display: flex;
+    gap: 30px;
+    img {
+      border-radius: 15px;
+      margin-bottom: 20px;
+      width: 250px;
+      height: 100%;
+
+      @media (max-width: 768px) {
+        max-width: 250px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 480px) {
+        max-width: 150px;
+        margin: 0 auto;
+      }
+    }
+    h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        font-size: 30px;
+        margin-bottom: 12px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 24px;
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 18px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 12px;
+      }
+      span{
+        font-size: 16px;
+        margin-bottom: 10px;
+        word-wrap: break-word; 
+        font-weight: 300;
+  
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+  
+        @media (max-width: 480px) {
+          font-size: 12px;
+        }
+      }
+    } 
+    li{
+      font-size: 16px;
+        word-wrap: break-word; 
+        font-weight: 300;
+  
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+  
+        @media (max-width: 480px) {
+          font-size: 12px;
+        }
+    }
+  }
+
+}

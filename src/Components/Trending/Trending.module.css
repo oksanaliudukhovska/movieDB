@@ -1,0 +1,70 @@
+.Trending {
+  background-color: #fff;
+  margin: 20px;
+}
+.Trending .panel {
+  display: flex;
+  align-items: center;
+}
+.Trending .panel h2 {
+  color: black;
+  margin-right: 30px;
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .Trending .panel h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .Trending .panel h2 {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
+.Trending .panel button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  margin-right: 10px;
+  font-family: var(--font-famile-base);
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  .Trending .panel button {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+}
+@media (max-width: 480px) {
+  .Trending .panel button {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+}
+.Trending .container {
+  margin: 0 20px;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+.Trending .container::-webkit-scrollbar {
+  height: 8px;
+}
+.Trending .container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.Trending .container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.Trending .container .movieCard {
+  width: 200px;
+  margin: 20px;
+  flex-shrink: 0;
+}/*# sourceMappingURL=Trending.module.css.map */
