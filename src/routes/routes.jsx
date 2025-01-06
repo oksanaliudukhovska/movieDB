@@ -57,6 +57,7 @@ const router = createBrowserRouter([
 
       ]
     }
-])
+],
+{basename: "/movieDB"} )
 
 export default router;
